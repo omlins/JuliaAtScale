@@ -4,7 +4,7 @@
 
 1. `module load Julia` (or similar - Julia must be in the PATH)
 2. (remove depot - optional for minimal depot file later - to find depot use `] status`)
-3. add all packages required by your application(s) to be run at scale (`] add <packages...>`) - make sure your application runs as expected
+3. add all packages required by your application(s) to be run at scale (`] add <packages...>`, e.g. `add ParallelStencil#main, ImplicitGlobalGrid, MPI, CUDA, CellArrays, StaticArrays, ArgParse, BenchmarkTools, LinearAlgebra, Printf, Statistics`) - make sure your application runs as expected
 4. do `git clone https://github.com/omlins/JuliaAtScale jas` from the folder with you Julia application(s)
 5. do `chmod +x jas/*`
 6. do `./jas/s1_get_julia_soft.sh`
